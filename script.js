@@ -2,6 +2,7 @@ const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
+const facebookBtn = document.getElementById('facebook');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
 
@@ -55,7 +56,14 @@ function tweeQuote() {
     window.open(twitterUrl, '_blank');
 }
 
+
+//Share on Facebook
+function shareOnFacebook() {
+    const navUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + 'https://willy77229.github.io/quote-generator';
+    window.open(navUrl, '_blank');
+}
 getQuotes();
 
 newQuoteBtn.addEventListener('click', newQuote);
 twitterBtn.addEventListener('click', tweeQuote);
+facebookBtn.addEventListener('click', shareOnFacebook);
