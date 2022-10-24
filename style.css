@@ -52,6 +52,11 @@ body {
     justify-content: space-between;
 }
 
+.button-container2 {
+    display: flex;
+    justify-content: space-around;
+}
+
 button {
     cursor: pointer;
     font-size: 1.2rem;
